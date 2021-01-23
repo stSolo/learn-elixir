@@ -8,5 +8,12 @@ defmodule M do
     IO.puts "4 === 4.0 : #{4 === 4.0}"
     IO.puts "4 != 4.0 : #{4 != 4.0}"
     IO.puts "4 !== 4.0 : #{4 !== 4.0}"
+
+    IO.puts "5 > 4 : #{5 > 4}"
+    IO.puts "5 >= 4 : #{5 >= 4}"
+    IO.puts "5 < 4 : #{5 < 4}"
+    IO.puts "5 <= 4 : #{5 <= 4}"
+    IO.puts "5 > 4 and 6 > 3 : #{(5 > 4) and (6 > 3)}"
+    IO.puts "5 > 4 or 6 > 3 : #{(5 > 4) or (6 > 3)}"
   end
 end
