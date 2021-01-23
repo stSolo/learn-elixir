@@ -24,6 +24,13 @@ defmodule M do
     IO.inspect Enum.all?([1,2,3], fn n -> n == 2 end)
     IO.puts(Enum.reduce([1,2,3], fn n,sum -> n + sum end))
 
+    dbl_lst = for n <- [1,2,3], do: n*2
+    even_lst = for n <- [1,2,3], rem(n,2) == 0, do: n
+
+    IO.inspect(dbl_lst)
+    IO.inspect(even_lst)
+
+
   end
 
   defp do_it(x \\ 0, y \\ 0) do
